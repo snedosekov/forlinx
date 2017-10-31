@@ -1,0 +1,5 @@
+config RTL8192CU
+	tristate "Realtek 8188C/8192C USB WiFi"
+	---help---
+	  Help message of RTL8192CU  and RTL8188CU
+
