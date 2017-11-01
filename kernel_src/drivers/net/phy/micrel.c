@@ -85,8 +85,6 @@ static int kszphy_ack_interrupt(struct phy_device *phydev)
 	/* bit[7..0] int status, which is a read and clear register. */
 	int rc;
 
-	printk("genphy  ack interrupt\n");
-
 	rc = phy_read(phydev, MII_KSZPHY_INTCS);
 
 	return (rc < 0) ? rc : 0;
@@ -104,8 +102,6 @@ static int kszphy_set_interrupt(struct phy_device *phydev)
 static int kszphy_config_intr(struct phy_device *phydev)
 {
 	int temp, rc;
-
-	printk("genphy config intr\n");
 
 	/* set the interrupt pin active low */
 	temp = phy_read(phydev, MII_KSZPHY_CTRL);
@@ -150,25 +146,6 @@ static int kszphy_config_init_led8041(struct phy_device *phydev)
 {
 
 	struct device_node *of_node = phydev->dev.of_node;
-
-	printk("8041  init\n");
-
-//	phydev->advertising |= ADVERTISED_100baseT_Full |
-//			ADVERTISED_100baseT_Half;
-//
-//	/* Limit supported and advertised modes in fiber mode */
-//	if (of_property_read_bool(of_node, "micrel,fiber-mode")) {
-//		printk("8041  init fiber mode\n");
-//
-//		phydev->dev_flags |= MICREL_PHY_FXEN;
-//		phydev->supported &= SUPPORTED_100baseT_Full |
-//		SUPPORTED_100baseT_Half;
-//		phydev->supported |= SUPPORTED_FIBRE;
-//		phydev->advertising &= ADVERTISED_100baseT_Full |
-//		ADVERTISED_100baseT_Half;
-//		phydev->advertising |= ADVERTISED_FIBRE;
-//		phydev->autoneg = AUTONEG_DISABLE;
-//	}
 
 	/* single led control, register 0x1e bits 15..14 */
 	return kszphy_setup_led(phydev, 0x1e, 14);

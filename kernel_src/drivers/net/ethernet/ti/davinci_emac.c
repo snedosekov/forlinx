@@ -1006,8 +1006,6 @@ static void emac_rx_handler(void *token, int len, int status)
 	struct device		*emac_dev = &ndev->dev;
 	int			ret;
 
-	printk("er\n");
-
 	/* free and bail if we are shutting down */
 	if (unlikely(!netif_running(ndev) || !netif_carrier_ok(ndev))) {
 		dev_kfree_skb_any(skb);
@@ -1446,8 +1444,6 @@ static void emac_adjust_link(struct net_device *ndev)
 	int new_state = 0;
 
 	spin_lock_irqsave(&priv->lock, flags);
-
-	printk("emac_adjust_link\n");
 
 	if (phydev->link) {
 		/* check the mode of operation - full/half duplex */

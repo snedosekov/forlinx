@@ -116,8 +116,6 @@ int mdiobus_register(struct mii_bus *bus)
 		if ((bus->phy_mask & (1 << i)) == 0) {
 			struct phy_device *phydev;
 
-			printk("mdiobus scan %x\n", i);
-
 			phydev = mdiobus_scan(bus, i);
 			if (IS_ERR(phydev)) {
 				err = PTR_ERR(phydev);
