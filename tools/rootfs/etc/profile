@@ -1,0 +1,84 @@
+# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+PATH="/usr/local/bin:/usr/bin:/bin"
+EDITOR="/bin/vi"			# needed for packages like cron
+test -z "$TERM" && TERM="vt100"	# Basic terminal capab. For screen etc.
+
+if [ ! -e /etc/localtime ]; then
+	TZ="UTC"		# Time Zone. Look at http://theory.uwinnipeg.ca/gnu/glibc/libc_303.html 
+				# for an explanation of how to set this to your local timezone.
+	export TZ
+fi
+
+#set cpu freq from  default 720M to 800M Hz
+CPUFREQFILE=/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+if [ -e $CPUFREQFILE ]; then
+CURFREQ=$(cat  $CPUFREQFILE)
+if [ $CURFREQ = "720000" ]; then
+  echo 800000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+fi
+fi
+
+BOARDNAME=`cat /proc/boardname`
+if [ $BOARDNAME != "OK335xS2" ]; then
+        amixer cset name='PGA Capture Volume' 75%,75% >/dev/null
+fi
+
+if [ "$HOME" = "/home/root" ]; then
+   PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
+fi
+if [ "$PS1" ]; then
+# works for bash and ash (no other shells known to be in use here)
+   PS1='\u@\h:\w\$ '
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/* ; do
+    . $i
+  done
+  unset i
+fi
+
+
+export PATH PS1 OPIEDIR QPEDIR QTDIR EDITOR TERM
+
+umask 022
+
+export KEYPAD_DEV=/dev/input/keypad
+
+## tslib config
+export TSLIB_TSDEVICE=/dev/input/touchscreen0
+export TSLIB_CONFFILE=/etc/ts.conf
+export TSLIB_PLUGINDIR=/usr/lib/ts
+export POINTERCAL_FILE=/etc/pointercal
+export TSLIB_CALIBFILE=/etc/pointercal
+export TSLIB_CONSOLEDEVICE=none
+export TSLIB_FBDEVICE=/dev/fb0
+
+FB_SIZE=$(cat /sys/class/graphics/fb0/virtual_size)
+
+## qteverywhere config
+export LD_LIBRARY_PATH=/usr/lib:/forlinx/qt/lib:$LD_LIBRARY_PATH
+export QT_QWS_FONTDIR=/forlinx/qt/lib/fonts
+if [ $FB_SIZE = "800,1200"  ]
+then
+export QWS_SIZE=800x600
+else
+export QWS_SIZE=800x480
+fi
+export QWS_DISPLAY=LinuxFb:/dev/fb0
+
+#export QWS_MOUSE_PROTO="Tslib:/dev/input/touchscreen0 Intellimouse:/dev/input/mice"
+export QWS_MOUSE_PROTO="Tslib:/dev/input/touchscreen0"
+
+
+#export QWS_KEYBOARD="USB:/dev/input/usbkbd"
+
+export PATH=$PATH:/forlinx/bin
+export PATH=$PATH:/forlinx/qt/bin
+export PATH=$PATH:/forlinx/qt/demos
+
+
+
+

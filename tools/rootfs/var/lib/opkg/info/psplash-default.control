@@ -1,0 +1,18 @@
+Package: psplash-default
+Version: 0.1+git1+de9979aefbc56af59b4d236a4b63dd19dcdcfb53-r5-arago3
+Description: Userspace framebuffer boot logo based on usplash.
+ PSplash is a userspace graphical boot splash screen for mainly embedded
+ Linux devices supporting a 16bpp or 32bpp framebuffer. It has few
+ dependencies (just libc), supports basic images and text and handles
+ rotation. Its visual look is configurable by basic source changes. Also
+ included is a 'client' command utility for sending information to psplash
+ such as boot progress information.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: psplash
+Homepage: http://git.yoctoproject.org/cgit/cgit.cgi/psplash
+Depends: psplash, glibc (>= 2.12.2)
+Source: git://git.yoctoproject.org/psplash;protocol=git file://psplash-init file://psplash-poky-img.h;outsuffix=default file://psplash-18bpp.patch file://0003-Updated-configurability.patch.patch file://psplash-poky-img.h file://psplash-bar-img.h file://0001-psplash-Add-Arago-custom-color.patch

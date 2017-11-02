@@ -1,0 +1,1 @@
+Received finished signal while progress is still: 10 Url:  QUrl( "http://www.forlinx.net" )  

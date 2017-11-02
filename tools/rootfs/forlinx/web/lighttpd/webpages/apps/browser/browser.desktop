@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Browser
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/web-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/browser.sh http://www.forlinx.net
+Type=Application
+ProgramType=gui

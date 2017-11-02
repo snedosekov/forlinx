@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Rtc
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/rtc-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/rtc.sh
+Type=Application
+ProgramType=gui

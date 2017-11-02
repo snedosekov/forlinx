@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=touch2mice
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/touch-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/t2m.sh
+Type=Application
+ProgramType=gui

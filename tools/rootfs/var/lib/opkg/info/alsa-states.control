@@ -1,0 +1,13 @@
+Package: alsa-states
+Version: 0.2.0-r3-arago0
+Description: Alsa scenario files to enable alsa state restoration.
+ Alsa Scenario Files - an init script and state files to restore sound
+ state at system boot and save it at system shut down.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7a-vfp-neon-3.2
+OE: alsa-state
+Homepage: unknown
+Source: file://asound.conf file://asound.state file://alsa-state

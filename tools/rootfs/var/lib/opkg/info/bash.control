@@ -1,0 +1,13 @@
+Package: bash
+Version: 3.2.48-r11-arago0
+Description: bash version 3.2.48-r11-arago0
+ An sh-compatible command language interpreter.
+Section: base/shell
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: bash
+Homepage: http://cnswww.cns.cwru.edu/~chet/bash/bashtop.html
+Depends: glibc (>= 2.12.2), libtinfo5 (>= 5.9)
+Source: ftp://ftp.gnu.org/gnu/bash/bash-3.2.48.tar.gz;name=tarball ftp://ftp.gnu.org/gnu/bash/bash-3.2-patches/bash32-049;apply=yes;striplevel=0;name=patch001 ftp://ftp.gnu.org/gnu/bash/bash-3.2-patches/bash32-050;apply=yes;striplevel=0;name=patch002 ftp://ftp.gnu.org/gnu/bash/bash-3.2-patches/bash32-051;apply=yes;striplevel=0;name=patch003

@@ -1,0 +1,13 @@
+Package: libsamplerate0
+Version: 0.1.8-r1
+Description: libsamplerate0 version 0.1.8-r1
+ An audio Sample Rate Conversion library
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: libsamplerate0
+Homepage: unknown
+Depends: glibc (>= 2.12.2), libsndfile1 (>= 1.0.25)
+Source: http://www.mega-nerd.com/SRC/libsamplerate-0.1.8.tar.gz

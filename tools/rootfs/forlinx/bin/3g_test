@@ -1,0 +1,128 @@
+#!/bin/sh
+#add add by muyinghua PN: ok335x
+
+UMS="usb_modeswitch"
+UMS_OPTIONS="-c"
+M_MODE=""
+PPPD="pppd"
+PPPD_OPTIONS="call"
+um_cfg_dir_path="/etc/usb_modeswitch.d"
+um_cfg_file_path=""
+CARD=$2
+
+init_conf()
+{
+
+case ${CARD} in
+	"ZET-MF190")
+		um_cfg_file_path="19d2:2000"
+		M_MODE="wcdma-MF190";;
+        "HW-E1750")
+                um_cfg_file_path="12d1:1446"
+                M_MODE="wcdma";;
+        "HW-E261")
+                um_cfg_file_path="12d1:1446"
+                M_MODE="wcdma";;
+        "ZET-AC582")
+                um_cfg_file_path="19d2:fff5"
+                M_MODE="cdma2000";;
+        "ZET-AC2787")
+                um_cfg_file_path="19d2:fff5"
+                M_MODE="cdma2000";;
+        "ZET-A356")
+                um_cfg_file_path="19d2:0120"
+                M_MODE="tdscdma";;
+	#begin: add by muyinghua PN: ok335x
+	"FL-AD3812")
+		M_MODE="wcdma-AD3812";;
+	#end:  add by muyinghua PN: ok335x
+	*)
+        	echo "ZET-MF190"
+                echo "HW-E1750"
+                echo "HW-E261"
+                echo "ZET-AC582"
+                echo "ZET-AC2787"
+                echo "ZET-A356"
+        	#begin: add by muyinghua PN: ok335x
+        	echo "FL-AD3812"
+		#end:  add by muyinghua PN: ok335x
+		exit 1;;
+
+	esac
+}
+
+start_usb_modeswitch()
+{
+        init_conf
+        echo ${um_cfg_file_path} ${M_MODE}
+	echo  ${PPPD} ${PPPD_OPTIONS} ${M_MODE}
+
+        echo "Starting usb_modeswitch ... "     
+        ${UMS} ${UMS_OPTIONS} /${um_cfg_dir_path}/${um_cfg_file_path}
+        if $?
+        then
+                echo "FAILED:  starting usb_modeswitch."
+        else
+                echo "SUCCESS:  starting usb_modeswitch."
+        fi
+}
+start_pppd()
+{
+        init_conf
+        echo ${um_cfg_file_path} ${M_MODE}
+	echo  ${PPPD} ${PPPD_OPTIONS} ${M_MODE}
+
+	route del default
+        echo "Starting pppd ... "
+        ${PPPD} ${PPPD_OPTIONS} ${M_MODE}&
+        if $?
+        then
+                echo "FAILED:  starting pppd."
+        else
+                echo "SUCCESS:  starting pppd."
+        fi
+}
+
+start() 
+{
+	start_usb_modeswitch
+	sleep 10
+	start_pppd
+}
+
+stop() 
+{
+	echo "Stopping pppd ... "
+	killall -9 ${PPPD}
+	echo "OK:  pppd was not running"
+}
+
+restart() {
+	stop
+	sleep 2
+	start
+}
+
+case $1 in
+
+"start")
+	start 
+	echo "start";;
+"stop") 
+	stop
+	echo "stop";;
+"start_ums")
+        start_usb_modeswitch
+        echo "start_usb_modeswitch";;
+"start_ppp")
+        start_pppd
+        echo "start_pppd";;
+"stop_ppp") 
+        stop
+        echo "stop_pppd";;
+*) 
+	echo ""start_ums" or "start_ppp" or "stop_ppp""
+	exit 1;;
+
+esac
+

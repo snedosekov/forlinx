@@ -1,0 +1,13 @@
+Package: initscript-telnetd
+Version: 1.0-r0
+Description: initscript-telnetd version 1.0-r0
+ Initscripts for telnetd
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7a-vfp-neon-3.2
+OE: initscript-telnetd
+Homepage: unknown
+Depends: update-rc.d
+Source: file://telnetd

@@ -1,0 +1,13 @@
+Package: curl
+Version: 7.26.0-r1-arago2
+Description: curl version 7.26.0-r1-arago2
+ Command line tool and library for client-side URL transfers.
+Section: console/network
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7a-vfp-neon-3.2
+OE: curl
+Homepage: http://curl.haxx.se/
+Depends: libcurl5 (>= 7.26.0), libcrypto1.0.0 (>= 1.0.0j), glibc (>= 2.12.2), libz1 (>= 1.2.7), libssl1.0.0 (>= 1.0.0j)
+Source: http://curl.haxx.se/download/curl-7.26.0.tar.bz2 file://pkgconfig_fix.patch

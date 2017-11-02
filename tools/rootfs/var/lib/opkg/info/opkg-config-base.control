@@ -1,0 +1,12 @@
+Package: opkg-config-base
+Version: 1.0-r1
+Description: opkg-config-base version 1.0-r1
+ Base configuration files for opkg
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: am335x_evm
+OE: opkg-config-base
+Homepage: unknown
+Source: None

@@ -1,0 +1,13 @@
+Package: i2c-tools
+Version: 3.0.3-r0
+Description: i2c-tools version 3.0.3-r0
+ Set of i2c tools for linux
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7a-vfp-neon-3.2
+OE: i2c-tools
+Homepage: unknown
+Depends: glibc (>= 2.12.2)
+Source: http://dl.lm-sensors.org/i2c-tools/releases/i2c-tools-3.0.3.tar.bz2 file://Module.mk

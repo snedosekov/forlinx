@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Led
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/led-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/led.sh
+Type=Application
+ProgramType=gui

@@ -1,0 +1,12 @@
+Package: u-boot
+Version: 2013.01.01-am335x-r5+gitr1+8eb15a787c558fee98b0fa2a66ff0849c732edcc
+Description: u-boot version 2013.01.01-am335x-r5+gitr1+8eb15a787c558fee98b0fa2a66ff0849c732edcc
+ u-boot bootloader for ARM MPU devices
+Section: bootloaders
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: am335x_evm
+OE: u-boot
+Homepage: http://www.denx.de/wiki/U-Boot/WebHome
+Source: git://git.ti.com/ti-u-boot/ti-u-boot.git;protocol=git;branch=ti-u-boot-2013.01.01-amsdk-05.07.00.00

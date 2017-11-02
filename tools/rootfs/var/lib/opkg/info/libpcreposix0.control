@@ -1,0 +1,13 @@
+Package: libpcreposix0
+Version: 8.31-r0
+Description: libpcre version 8.31-r0
+ libpcre pcreposix library
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: armv7a-vfp-neon-3.2
+OE: libpcre
+Homepage: unknown
+Depends: libpcre (>= 8.31), glibc (>= 2.12.2)
+Source: http://downloads.sourceforge.net/project/pcre/pcre/8.31/pcre-8.31.tar.bz2 file://pcre-cross.patch file://fix-pcre-name-collision.patch

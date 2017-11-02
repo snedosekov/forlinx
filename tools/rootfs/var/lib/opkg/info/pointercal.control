@@ -1,0 +1,12 @@
+Package: pointercal
+Version: 0.0-r11
+Description: pointercal version 0.0-r11
+ Touchscreen calibration data
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: am335x_evm
+OE: pointercal
+Homepage: unknown
+Source: file://pointercal file://COPYING

@@ -1,0 +1,13 @@
+Package: libpng12-0
+Version: 1.2.49-r1
+Description: PNG Library
+ PNG Library
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: Libpng
+Architecture: armv7a-vfp-neon-3.2
+OE: libpng
+Homepage: http://www.libpng.org/
+Depends: glibc (>= 2.12.2), libz1 (>= 1.2.7)
+Source: http://downloads.sourceforge.net/project/libpng/libpng12/1.2.49/libpng-1.2.49.tar.bz2

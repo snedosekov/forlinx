@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=BackLight
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/backlight-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/backlight.sh
+Type=Application
+ProgramType=gui

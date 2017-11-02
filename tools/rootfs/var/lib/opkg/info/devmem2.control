@@ -1,0 +1,13 @@
+Package: devmem2
+Version: 1.0-r7
+Description: devmem2 version 1.0-r7
+ Simple program to read/write from/to any location in memory.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: devmem2
+Homepage: unknown
+Depends: glibc (>= 2.12.2)
+Source: http://www.lartmaker.nl/lartware/port/devmem2.c file://devmem2-fixups-2.patch;apply=yes;striplevel=0

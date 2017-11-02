@@ -1,0 +1,1276 @@
+Package: shadow-securetty
+Version: 4.1.4.3-r1-arago0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: busybox-syslog
+Version: 1.20.2-r3-arago7
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Conffiles:
+ /etc/syslog-startup.conf.busybox 638acd6813015513fbd0c91d5918be4e
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: ltrace
+Version: 0.5.3-r5
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: kernel-module-g-mass-storage
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: update-modules, kernel-3.2.0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: opkg
+Version: 1:0.1.8+svnr633-r10.7-arago0
+Depends: opkg-config-base, update-alternatives-cworth, libopkg1 (>= 0.1.8+svnr633), glibc (>= 2.12.2)
+Provides:
+Replaces: opkg-nogpg
+Status: install user installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+
+Package: iperf
+Version: 2.0.5-r0
+Depends: glibc (>= 2.12.2), libgcc-s1 (>= 4.5.3), libstdc++6 (>= 4.5.3)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: libcom-err2
+Version: 1.42.1-r4
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: alsa-lib
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: busybox
+Version: 1.20.2-r3-arago7
+Depends: update-rc.d, glibc (>= 2.12.2)
+Recommends: busybox-syslog, busybox-udhcpc
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: tslib-conf
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r0
+Provides: libts-0.0-conf
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libssl1.0.0
+Version: 1.0.0j-r15.3-arago6
+Depends: libcrypto1.0.0 (>= 1.0.0j), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: opkg-config-base
+Version: 1.0-r1
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Conffiles:
+ /etc/opkg/arch.conf 82e77f9b80138965262e3f45ac50633d
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: busybox-udhcpc
+Version: 1.20.2-r3-arago7
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: bash
+Version: 3.2.48-r11-arago0
+Depends: glibc (>= 2.12.2), libtinfo5 (>= 5.9)
+Provides:
+Status: install user installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+
+Package: libusb-0.1-4
+Version: 1:0.1.3-r6
+Depends: glibc (>= 2.12.2), libusb-1.0-0 (>= 1.0.8)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: strace
+Version: 4.7-r1
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: alsa-states
+Version: 0.2.0-r3-arago0
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libffi6
+Version: 3.0.11-r0
+Depends: glibc (>= 2.12.2), libgcc-s1 (>= 4.5.3)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: initscript-telnetd
+Version: 1.0-r0
+Depends: update-rc.d
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: kernel-module-tcrypt
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: update-modules, kernel-3.2.0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: dbus-1
+Version: 1.6.4-r5.0-arago1
+Depends: update-rc.d, libdbus-1-3 (>= 1.6.4), base-passwd, shadow, libexpat1 (>= 2.1.0), glibc (>= 2.12.2)
+Provides: dbus-x11
+Replaces: dbus-x11
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Conffiles:
+ /etc/dbus-1/system.conf cde0a6ef9dad7b80fce3b227753fa64e
+ /etc/dbus-1/session.conf 3ec4497bcff6f8e1445db64b23bda595
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: modutils-initscripts
+Version: 1.0-r6
+Depends: update-rc.d
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: glibc
+Version: 2.12.2-r3
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: kernel-modules
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: kernel-module-hid-logitech-dj, kernel-module-g-ether, kernel-module-g-file-storage, kernel-module-g-mass-storage, kernel-module-tcrypt, kernel-module-scsi-wait-scan
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: packagegroup-arago-console
+Version: 1.0-r3
+Depends: alsa-utils, jpeg-tools, libpng12-0, ltrace, dosfstools, libz1, jpeg, alsa-utils-amixer, util-linux-fdisk, ncurses-tools, alsa-conf-base, tslib-conf, alsa-utils-midi, alsa-utils-iecset, e2fsprogs-e2fsck, alsa-utils-alsamixer, alsa-utils-alsactl, ncurses, alsa-utils-speakertest, e2fsprogs-mke2fs, alsa-state, libfreetype6, thttpd, i2c-tools, alsa-server, strace, usbutils, e2fsprogs, alsa-utils-aconnect, fbset, alsa-utils-alsaconf, tslib-tests, iproute2, ncurses-terminfo, alsa-conf, tslib-calibrate
+Recommends: kernel-modules
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1365164189
+
+Package: alsa-utils-amixer
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libjpeg8
+Version: 8d+1.2.1-r5
+Depends: glibc (>= 2.12.2)
+Provides: jpeg
+Replaces: jpeg
+Conflicts: jpeg
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libopkg1
+Version: 1:0.1.8+svnr633-r10.7-arago0
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libusb-1.0-0
+Version: 1.0.8-r4
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libuuid1
+Version: 2.21.2-r5
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: ncurses-tools
+Version: 5.9-r11.1
+Depends: ncurses, glibc (>= 2.12.2), libtic5 (>= 5.9), libtinfo5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libnl2
+Version: 1:2.0-r6
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: base-files
+Version: 3.0.14-r72-arago0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Conffiles:
+ /etc/fstab fcfdf6cb2d8b134ba87f9519e13c58ef
+ /etc/hostname 4db683832389ed6ca2fe274d196f9456
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: alsa-conf-base
+Version: 1.0.25-r2
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: libpcre
+Version: 8.31-r0
+Depends: glibc (>= 2.12.2), libpcreposix0 (>= 8.31)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: sysvinit-inittab
+Version: 2.88dsf-r9
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Conffiles:
+ /etc/inittab 9cec6ce80169703e8ab3e622544574b5
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: dosfstools
+Version: 2.11-r4-arago0
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: devmem2
+Version: 1.0-r7
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: libstdc++6
+Version: 4.5.3-r3
+Depends: glibc (>= 2.12.2), libgcc-s1 (>= 4.5.3)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: libdbus-1-3
+Version: 1.6.4-r5.0-arago1
+Depends: glibc (>= 2.12.2)
+Recommends: dbus-1
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: alsa-utils-alsaloop
+Version: 1.0.25-r2
+Depends: libsamplerate0 (>= 0.1.8), glibc (>= 2.12.2), libasound2 (>= 1.0.25)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: nfs-utils-client
+Version: 1.2.3-r5
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: u-boot
+Version: 2013.01.01-am335x-r5+gitr1+8eb15a787c558fee98b0fa2a66ff0849c732edcc
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: usbutils
+Version: 006-r0
+Depends: glibc (>= 2.12.2), libz1 (>= 1.2.7), usbutils-ids, libusb-1.0-0 (>= 1.0.8)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: initscripts
+Version: 1.0-r137
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: jpeg-tools
+Version: 8d+1.2.1-r5
+Depends: glibc (>= 2.12.2), libjpeg8 (>= 8d+1.2.1)
+Provides: libjpeg-tools
+Replaces: libjpeg-tools
+Conflicts: libjpeg-tools
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libcrypto1.0.0
+Version: 1.0.0j-r15.3-arago6
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: libtinfo5
+Version: 5.9-r11.1
+Depends: glibc (>= 2.12.2)
+Recommends: ncurses-terminfo-base
+Suggests: ncurses-terminfo
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: update-alternatives-cworth
+Version: 1:0.1.8+svnr633-r10.7-arago0
+Provides: update-alternatives
+Conflicts: update-alternatives-dpkg
+Status: install ok installed
+Architecture: all
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: kernel-module-scsi-wait-scan
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: update-modules, kernel-3.2.0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: iproute2
+Version: 3.5.1-r1
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164187
+Auto-Installed: yes
+
+Package: pointercal
+Version: 0.0-r11
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164187
+Auto-Installed: yes
+
+Package: alsa-utils-alsaconf
+Version: 1.0.25-r2
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libts-1.0-0
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r0
+Depends: glibc (>= 2.12.2), tslib-conf
+Recommends: pointercal
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: libxml2
+Version: 2.8.0-r3
+Depends: glibc (>= 2.12.2), libz1 (>= 1.2.7)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: libblkid1
+Version: 2.21.2-r5
+Depends: glibc (>= 2.12.2), libuuid1 (>= 2.21.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: alsa-state
+Version: 0.2.0-r3-arago0
+Depends: update-rc.d, alsa-utils-alsactl
+Recommends: alsa-states
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Conffiles:
+ /etc/asound.conf 0ee65c84c1ec3b97893e000a483cc813
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: alsa-conf
+Version: 1.0.25-r2
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: tcpdump
+Version: 4.1.1-r2
+Depends: glibc (>= 2.12.2), libpcap1 (>= 1.3.0)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: mtd-utils
+Version: 1.5.0-r1
+Depends: glibc (>= 2.12.2), libz1 (>= 1.2.7), liblzo2-2 (>= 2.06), libuuid1 (>= 2.21.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: libpcreposix0
+Version: 8.31-r0
+Depends: libpcre (>= 8.31), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: udev-utils
+Version: 164-r17
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: ethtool
+Version: 3.5-r0
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: packagegroup-arago-base-tisdk
+Version: 1.0-r12
+Depends: iptables, psplash, libxml2, dbus-1, nfs-utils-client, u-boot, arago-gpl-notice, libglib-2.0-0, iperf, libpcre, libexpat1
+Provides:
+Status: install user installed
+Architecture: am335x_evm
+Installed-Time: 1365164191
+
+Package: libtic5
+Version: 5.9-r11.1
+Depends: glibc (>= 2.12.2), libtinfo5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: alsa-utils-alsaucm
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: curl
+Version: 7.26.0-r1-arago2
+Depends: libcurl5 (>= 7.26.0), libcrypto1.0.0 (>= 1.0.0j), glibc (>= 2.12.2), libz1 (>= 1.2.7), libssl1.0.0 (>= 1.0.0j)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: i2c-tools
+Version: 3.0.3-r0
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: opkg-collateral
+Version: 1.0-r1
+Provides:
+Status: install user installed
+Architecture: armv7a-vfp-neon-3.2
+Conffiles:
+ /etc/opkg/opkg.conf 67f67d5965e80c2bfed9cc27ccad4452
+Installed-Time: 1365164182
+
+Package: libncursesw5
+Version: 5.9-r11.1
+Depends: glibc (>= 2.12.2), libtinfo5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: arago-gpl-notice
+Version: 1.0-r1
+Depends: update-rc.d
+Provides:
+Status: install ok installed
+Architecture: all
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: e2fsprogs-badblocks
+Version: 1.42.1-r4
+Depends: glibc (>= 2.12.2), libext2fs2 (>= 1.42.1), libcom-err2 (>= 1.42.1)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: psplash-default
+Version: 0.1+git1+de9979aefbc56af59b4d236a4b63dd19dcdcfb53-r5-arago3
+Depends: psplash, glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: alsa-utils-midi
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: alsa-utils-alsamixer
+Version: 1.0.25-r2
+Depends: libncursesw5 (>= 5.9), libtinfo5 (>= 5.9), glibc (>= 2.12.2), libpanelw5 (>= 5.9), libmenuw5 (>= 5.9), libasound2 (>= 1.0.25), libformw5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libsamplerate0
+Version: 0.1.8-r1
+Depends: glibc (>= 2.12.2), libsndfile1 (>= 1.0.25)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: usbutils-ids
+Version: 006-r0
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: alsa-utils-iecset
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libkmod2
+Version: 9-r0.0
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: fbset-modes
+Version: 0.1.0-r6
+Provides:
+Status: install ok installed
+Architecture: all
+Conffiles:
+ /etc/fb.modes b8de2484fab6925beba7fc258292ea2d
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: base-passwd
+Version: 3.5.26-r1
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: kernel-3.2.0
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: kernel-image-3.2.0
+Provides: kernel-3.2.0
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: busybox-hwclock
+Version: 1.20.2-r3-arago7
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: kernel-module-g-ether
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: update-modules, kernel-3.2.0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: thttpd
+Version: 2.25b-r0-arago0
+Depends: update-rc.d, glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: shadow
+Version: 4.1.4.3-r12
+Depends: glibc (>= 2.12.2), shadow-securetty
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: e2fsprogs-e2fsck
+Version: 1.42.1-r4
+Depends: libext2fs2 (>= 1.42.1), libcom-err2 (>= 1.42.1), libe2p2 (>= 1.42.1), glibc (>= 2.12.2), libblkid1 (>= 2.21.2), libuuid1 (>= 2.21.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: kmod
+Version: 9-r0.0
+Depends: glibc (>= 2.12.2), libkmod2 (>= 9)
+Provides: module-init-tools-depmod, module-init-tools, module-init-tools-insmod-static
+Replaces: module-init-tools-depmod, module-init-tools, module-init-tools-insmod-static
+Conflicts: module-init-tools-depmod, module-init-tools, module-init-tools-insmod-static
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: packagegroup-core-boot
+Version: 1.0-r10
+Depends: tinylogin, busybox, modutils-initscripts, busybox-hwclock, sysvinit, update-alternatives-cworth, udev, initscripts, netbase, base-files, base-passwd
+Provides: task-core-boot
+Replaces: task-core-boot
+Conflicts: task-core-boot
+Status: install user installed
+Architecture: am335x_evm
+Installed-Time: 1365164190
+
+Package: iptables
+Version: 1.4.15-r0
+Depends: glibc (>= 2.12.2)
+Recommends: kernel-module-nf-defrag-ipv4, kernel-module-nf-conntrack, kernel-module-ipt-masquerade, kernel-module-x-tables, kernel-module-nf-nat, kernel-module-nf-conntrack-ipv4, kernel-module-iptable-nat, kernel-module-ip-tables, kernel-module-iptable-filter
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: kernel-module-g-file-storage
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: update-modules, kernel-3.2.0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: alsa-utils-aplay
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libext2fs2
+Version: 1.42.1-r4
+Depends: glibc (>= 2.12.2), libblkid1 (>= 2.21.2), libcom-err2 (>= 1.42.1)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: tslib-calibrate
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r0
+Depends: libts-1.0-0 (>= 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: udev
+Version: 164-r17
+Depends: update-rc.d, glibc (>= 2.12.2), libusb-0.1-4 (>= 0.1.3)
+Recommends: udev-utils, pciutils-ids, udev-extraconf, usbutils-ids
+Provides: hotplug
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: e2fsprogs
+Version: 1.42.1-r4
+Depends: libss2 (>= 1.42.1), libblkid1 (>= 2.21.2), libcom-err2 (>= 1.42.1), libe2p2 (>= 1.42.1), glibc (>= 2.12.2), e2fsprogs-badblocks, libext2fs2 (>= 1.42.1), libuuid1 (>= 2.21.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: libpanelw5
+Version: 5.9-r11.1
+Depends: glibc (>= 2.12.2), libncursesw5 (>= 5.9), libtinfo5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libnl-genl2
+Version: 1:2.0-r6
+Depends: libnl2 (>= 2.0), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: ncurses-terminfo-base
+Version: 5.9-r11.1
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: sysvinit-pidof
+Version: 2.88dsf-r7
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: libpcap1
+Version: 1.3.0-r3.0
+Depends: libnl2 (>= 2.0), glibc (>= 2.12.2), libnl-genl2 (>= 2.0), libusb-1.0-0 (>= 1.0.8)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: kernel-module-hid-logitech-dj
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Depends: update-modules, kernel-3.2.0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: libsndfile1
+Version: 1.0.25-r1
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libss2
+Version: 1.42.1-r4
+Depends: glibc (>= 2.12.2), libcom-err2 (>= 1.42.1)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: update-rc.d
+Version: 0.7-r4
+Provides:
+Status: install ok installed
+Architecture: all
+Installed-Time: 1365164182
+Auto-Installed: yes
+
+Package: alsa-utils-aconnect
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: packagegroup-arago-base
+Version: 1.0-r3
+Depends: mtd-utils, ethtool, devmem2, alsa-lib, initscript-telnetd, module-init-tools, curl, tcpdump, alsa-utils-aplay
+Provides:
+Status: install user installed
+Architecture: all
+Installed-Time: 1365164184
+
+Package: util-linux-fdisk
+Version: 2.21.2-r5
+Depends: glibc (>= 2.12.2), libblkid1 (>= 2.21.2), libuuid1 (>= 2.21.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: tinylogin
+Version: 1.4-r9
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: libcurl5
+Version: 7.26.0-r1-arago2
+Depends: libcrypto1.0.0 (>= 1.0.0j), glibc (>= 2.12.2), libz1 (>= 1.2.7), libssl1.0.0 (>= 1.0.0j)
+Recommends: curl-certs
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: pciutils-ids
+Version: 3.1.10-r0
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: libz1
+Version: 1.2.7-r0
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: libglib-2.0-0
+Version: 1:2.32.4-r7
+Depends: libffi6 (>= 3.0.11), glibc (>= 2.12.2), libz1 (>= 1.2.7)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164191
+Auto-Installed: yes
+
+Package: netbase
+Version: 5.0-r0-arago2
+Depends: update-rc.d
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Conffiles:
+ /etc/hosts 27acad957c7cded40cd6ac50d23ddc66
+ /etc/network/interfaces 693bd269c3378d28e29f7face5be2dff
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: fbset
+Version: 2.1-r4
+Depends: glibc (>= 2.12.2)
+Recommends: fbset-modes
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: psplash
+Version: 0.1+git1+de9979aefbc56af59b4d236a4b63dd19dcdcfb53-r5-arago3
+Depends: update-rc.d, glibc (>= 2.12.2)
+Recommends: psplash-default
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: liblzo2-2
+Version: 2.06-r1
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: tslib-tests
+Version: 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0-r0
+Depends: libts-1.0-0 (>= 1.0+gitr1+e17263ef401ee885a27d649b90b577cfb44500e0), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164187
+Auto-Installed: yes
+
+Package: ncurses
+Version: 5.9-r11.1
+Depends: glibc (>= 2.12.2), libtinfo5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libexpat1
+Version: 2.1.0-r0
+Depends: glibc (>= 2.12.2), libgcc-s1 (>= 4.5.3)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: alsa-utils-alsactl
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Recommends: alsa-states
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: libasound2
+Version: 1.0.25-r2
+Depends: glibc (>= 2.12.2), alsa-conf-base
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164183
+Auto-Installed: yes
+
+Package: alsa-utils-speakertest
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: run-postinsts
+Version: 1.0-r8
+Depends: update-rc.d
+Provides:
+Status: install user installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164182
+
+Package: libpng12-0
+Version: 1.2.49-r1
+Depends: glibc (>= 2.12.2), libz1 (>= 1.2.7)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: kernel-image-3.2.0
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Provides:
+Status: install ok installed
+Architecture: am335x_evm
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: ncurses-terminfo
+Version: 5.9-r11.1
+Depends: ncurses-terminfo-base
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: libmenuw5
+Version: 5.9-r11.1
+Depends: glibc (>= 2.12.2), libncursesw5 (>= 5.9), libtinfo5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: alsa-utils
+Version: 1.0.25-r2
+Depends: alsa-utils-alsamixer, alsa-utils-alsactl, alsa-utils-alsaconf, alsa-utils-aseqnet, alsa-utils-amixer, alsa-utils-midi, alsa-utils-speakertest, alsa-utils-aconnect, alsa-utils-iecset, alsa-utils-alsaloop, alsa-utils-aseqdump, alsa-utils-alsaucm, alsa-utils-aplay
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: e2fsprogs-mke2fs
+Version: 1.42.1-r4
+Depends: libext2fs2 (>= 1.42.1), libcom-err2 (>= 1.42.1), libe2p2 (>= 1.42.1), glibc (>= 2.12.2), libblkid1 (>= 2.21.2), libuuid1 (>= 2.21.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: libformw5
+Version: 5.9-r11.1
+Depends: glibc (>= 2.12.2), libncursesw5 (>= 5.9), libtinfo5 (>= 5.9)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: alsa-utils-aseqnet
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164184
+Auto-Installed: yes
+
+Package: update-modules
+Version: 1.0-r13
+Depends: module-init-tools-depmod
+Provides:
+Status: install ok installed
+Architecture: all
+Installed-Time: 1365164189
+Auto-Installed: yes
+
+Package: sysvinit
+Version: 2.88dsf-r7
+Depends: glibc (>= 2.12.2), sysvinit-pidof, sysvinit-inittab
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: alsa-utils-aseqdump
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164185
+Auto-Installed: yes
+
+Package: libe2p2
+Version: 1.42.1-r4
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: libgcc-s1
+Version: 4.5.3-r3
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: alsa-server
+Version: 1.0.25-r2
+Depends: libasound2 (>= 1.0.25), glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+
+Package: udev-extraconf
+Version: 1.0-r6
+Depends: udev
+Provides: udev-extra-rules
+Replaces: udev-extra-rules
+Conflicts: udev-extra-rules
+Status: install ok installed
+Architecture: all
+Conffiles:
+ /etc/udev/mount.blacklist e9d30e0c326a0ab6bbe3f5d3085e1769
+Installed-Time: 1365164190
+Auto-Installed: yes
+
+Package: libfreetype6
+Version: 2.4.10-r1-arago0
+Depends: glibc (>= 2.12.2)
+Provides:
+Status: install ok installed
+Architecture: armv7a-vfp-neon-3.2
+Installed-Time: 1365164186
+Auto-Installed: yes
+

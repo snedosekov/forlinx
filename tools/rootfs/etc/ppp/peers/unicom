@@ -1,0 +1,10 @@
+ttyS0
+115200
+crtscts
+connect '/usr/sbin/chat -v -f /etc/ppp/chat/unicom'
+debug
+nodetach
+ipcp-accetp-local
+ipcp-accept-remote
+defaultroute
+#user card

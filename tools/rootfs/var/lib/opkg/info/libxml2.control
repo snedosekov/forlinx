@@ -1,0 +1,18 @@
+Package: libxml2
+Version: 2.8.0-r3
+Description: XML C Parser Library and Toolkit
+ The XML Parser Library allows for manipulation of XML files.  Libxml2
+ exports Push and Pull type parser interfaces for both XML and HTML.  It
+ can do DTD validation at parse time, on a parsed document instance or
+ with an arbitrary DTD.  Libxml2 includes complete XPath, XPointer and
+ Xinclude implementations.  It also has a SAX like interface, which is
+ designed to be compatible with Expat.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7a-vfp-neon-3.2
+OE: libxml2
+Homepage: http://www.xmlsoft.org/
+Depends: glibc (>= 2.12.2), libz1 (>= 1.2.7)
+Source: ftp://xmlsoft.org/libxml2/libxml2-2.8.0.tar.gz file://libxml-64bit.patch file://libxml2-CVE-2012-2871.patch file://ansidecl.patch

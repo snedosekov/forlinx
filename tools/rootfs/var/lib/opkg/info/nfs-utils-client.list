@@ -1,0 +1,4 @@
+/sbin/mount.nfs4
+/sbin/umount.nfs4
+/sbin/mount.nfs
+/sbin/umount.nfs

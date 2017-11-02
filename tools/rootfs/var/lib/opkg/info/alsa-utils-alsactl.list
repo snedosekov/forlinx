@@ -1,0 +1,12 @@
+/usr/share/alsa/init/test
+/lib/udev/rules.d/90-alsa-restore.rules
+/usr/share/alsa/init/info
+/usr/share/alsa/init/hda
+/usr/share/alsa/init/default
+/var/lib/alsa/
+/usr/share/alsa/init/00main
+/lib/udev/
+/usr/share/alsa/init/
+/usr/share/alsa/init/help
+/lib/udev/rules.d/
+/usr/sbin/alsactl

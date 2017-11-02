@@ -1,0 +1,17 @@
+Package: libfreetype6
+Version: 2.4.10-r1-arago0
+Description: Freetype font rendering library
+ FreeType is a software font engine that is designed to be small,
+ efficient, highly customizable, and portable while capable of producing
+ high-quality output (glyph images). It can be used in graphics libraries,
+ display servers, font conversion tools, text image generation tools, and
+ many other products as well.
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: freetype
+Homepage: http://www.freetype.org/
+Depends: glibc (>= 2.12.2)
+Source: http://downloads.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 file://no-hardcode.patch

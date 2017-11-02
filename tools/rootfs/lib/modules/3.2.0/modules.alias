@@ -1,0 +1,3 @@
+# Aliases extracted from modules themselves.
+alias hid:b0003v0000046Dp0000C532 hid_logitech_dj
+alias hid:b0003v0000046Dp0000C52B hid_logitech_dj

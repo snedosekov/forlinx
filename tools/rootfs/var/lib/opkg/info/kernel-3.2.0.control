@@ -1,0 +1,14 @@
+Package: kernel-3.2.0
+Version: 3.2.0-psp04.06.00.10-r0-arago0
+Description: linux-am335x version 3.2.0-psp04.06.00.10-r0-arago0
+ Linux kernel for TI33x devices from PSP
+Section: kernel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: am335x_evm
+OE: linux-am335x
+Homepage: unknown
+Depends: kernel-image-3.2.0
+Provides: kernel-3.2.0
+Source: git://arago-project.org/git/projects/linux-am33x.git;protocol=git;branch=v3.2-staging file://defconfig file://0001-musb-update-PIO-mode-help-information-in-Kconfig.patch file://0001-am335x_evm_defconfig-turn-off-MUSB-DMA.patch file://0001-mach-omap2-pm33xx-Disable-VT-switch.patch file://0001-am33x-Add-memory-addresses-for-crypto-modules.patch file://0002-am33x-Add-crypto-device-and-resource-structures.patch file://0003-am33x-Add-crypto-device-and-resource-structure-for-T.patch file://0004-am33x-Add-crypto-drivers-to-Kconfig-and-Makefiles.patch file://0005-am33x-Create-header-file-for-OMAP4-crypto-modules.patch file://0006-am33x-Create-driver-for-TRNG-crypto-module.patch file://0007-am33x-Create-driver-for-AES-crypto-module.patch file://0008-am33x-Create-driver-for-SHA-MD5-crypto-module.patch file://0002-AM335x-OCF-Driver-for-Linux-3.patch file://0001-am335x-Add-crypto-driver-settings-to-defconfig.patch file://0001-am335x-Add-pm_runtime-API-to-crypto-driver.patch file://0002-am335x-Add-suspend-resume-routines-to-crypto-driver.patch file://0001-ARM-AM33xx-hwmod-Convert-SHA0-crypto-device-data-to-.patch file://0002-crypto-omap4-sham-Use-finer-grained-PM-management.patch file://0003-crypto-omap4-sham-Add-suspend-resume-PM-support.patch file://0004-crypto-omap4-sham-Don-t-use-hardcoded-base-address.patch file://0005-ARM-AM33xx-hwmod-Convert-AES0-crypto-device-data-to-.patch file://0006-crypto-omap4-aes-User-finer-grained-PM-management.patch file://0007-crypto-omap4-aes-Add-suspend-resume-PM-support.patch file://0008-crypto-omap4-aes-Don-t-use-hardcoded-base-address.patch file://0009-ARM-AM33xx-hwmod-Convert-RNG-device-data-to-hwmod.patch file://0010-hwrng-omap4-rng-Convert-to-use-pm_runtime-API.patch file://0001-omap4-rng-Remove-check-for-GP-only-device-type-in-RN.patch file://0001-am33xx-Add-SmartReflex-support.patch file://0002-am33xx-Enable-CONFIG_AM33XX_SMARTREFLEX.patch file://0002-Smartreflex-limited-to-ES-1.0.patch file://0001-omap-serial-add-delay-before-suspending.patch file://0001-am3358-sk-modified-WLAN-enable-and-irq-to-match-boar.patch file://0001-am335xevm-using-edge-triggered-interrupts-for-WLAN.patch file://0001-am335x-enable-pullup-on-the-WLAN-enable-pin-fo.patch file://0001-ARM-OMAP2-AM335x-Update-SPI-flash-layout.patch

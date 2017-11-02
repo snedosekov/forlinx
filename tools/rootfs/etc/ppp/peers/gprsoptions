@@ -1,0 +1,29 @@
+#/etc/ppp/peers/gprsoptions
+# Usage:   root>pppd call gprsoptions
+/dev/ttyS4
+115200
+nocrtscts
+modem
+#noauth
+#auth
+#-pap
+#+chap
+lock
+debug
+nodetach
+#hide-password
+usepeerdns
+noipdefault
+defaultroute
+user cmnet
+#user smsong
+0.0.0.0:0.0.0.0
+ipcp-accept-local
+#ipcp-accept-remote
+#lcp-echo-failure  12
+#lcp-echo-interval 3 
+noccp                
+#novj                
+#novjccomp           
+persist              
+connect '/etc/ppp/chat -s -v -f /etc/ppp/gprs-connect-chat'

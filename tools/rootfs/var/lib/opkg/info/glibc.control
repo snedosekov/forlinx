@@ -1,0 +1,12 @@
+Package: glibc
+Version: 2.12.2-r3
+Description: external-arago-toolchain version 1.0-r3
+ external-arago-toolchain version 1.0-r3
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1+
+Architecture: armv7a-vfp-neon-3.2
+OE: external-arago-toolchain
+Homepage: unknown
+Source: file://SUPPORTED

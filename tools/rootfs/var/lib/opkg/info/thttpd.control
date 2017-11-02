@@ -1,0 +1,13 @@
+Package: thttpd
+Version: 2.25b-r0-arago0
+Description: thttpd version 2.25b-r0-arago0
+ A simple, small, portable, fast, and secure HTTP server.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: armv7a-vfp-neon-3.2
+OE: thttpd
+Homepage: http://www.acme.com/software/thttpd/
+Depends: update-rc.d, glibc (>= 2.12.2)
+Source: http://www.acme.com/software/thttpd/thttpd-2.25b.tar.gz file://install.patch file://acinclude.m4 file://init file://htpasswd_shared.diff file://htpasswd_getline.diff

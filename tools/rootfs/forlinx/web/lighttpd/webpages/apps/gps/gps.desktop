@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=GPS
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/gps-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/gps.sh
+Type=Application
+ProgramType=gui

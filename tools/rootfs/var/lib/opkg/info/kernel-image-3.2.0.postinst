@@ -1,0 +1,8 @@
+if [ ! -e "$D/lib/modules/3.2.0" ]; then
+	mkdir -p $D/lib/modules/3.2.0
+fi
+if [ -n "$D" ]; then
+	depmod -a -b $D -F /home/jenkins/amsdk-nightly-build/build-CORTEX_1/arago-tmp-external-arago-toolchain/sysroots/am335x-evm/usr/src/kernel/System.map-3.2.0 3.2.0
+else
+	depmod -a 3.2.0
+fi

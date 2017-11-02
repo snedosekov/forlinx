@@ -1,0 +1,14 @@
+Package: ltrace
+Version: 0.5.3-r5
+Description: ltrace version 0.5.3-r5
+ ltrace shows runtime library call information for dynamically linked
+ executables.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7a-vfp-neon-3.2
+OE: ltrace
+Homepage: http://ltrace.alioth.debian.org
+Depends: glibc (>= 2.12.2)
+Source: ftp://ftp.debian.org/debian/pool/main/l/ltrace/ltrace_0.5.3.orig.tar.gz;name=archive ftp://ftp.debian.org/debian/pool/main/l/ltrace/ltrace_0.5.3-2.1.diff.gz;name=patch file://add-sysdep.patch file://ltrace-compile.patch file://ltrace-mips-remove-CP.patch file://ltrace-mips.patch file://ltrace-ppc.patch file://ltrace-fix-sysdep_h-dependency.patch

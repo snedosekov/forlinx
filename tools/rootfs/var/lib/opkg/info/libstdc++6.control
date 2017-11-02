@@ -1,0 +1,13 @@
+Package: libstdc++6
+Version: 4.5.3-r3
+Description: external-arago-toolchain version 1.0-r3
+ external-arago-toolchain version 1.0-r3
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv3+ with GCC RLE
+Architecture: armv7a-vfp-neon-3.2
+OE: external-arago-toolchain
+Homepage: unknown
+Depends: glibc (>= 2.12.2), libgcc-s1 (>= 4.5.3)
+Source: file://SUPPORTED

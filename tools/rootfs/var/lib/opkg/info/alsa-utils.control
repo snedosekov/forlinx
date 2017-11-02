@@ -1,0 +1,13 @@
+Package: alsa-utils
+Version: 1.0.25-r2
+Description: alsa-utils version 1.0.25-r2
+ ALSA Utilities
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: alsa-utils
+Homepage: http://www.alsa-project.org
+Depends: alsa-utils-alsamixer, alsa-utils-alsactl, alsa-utils-alsaconf, alsa-utils-aseqnet, alsa-utils-amixer, alsa-utils-midi, alsa-utils-speakertest, alsa-utils-aconnect, alsa-utils-iecset, alsa-utils-alsaloop, alsa-utils-aseqdump, alsa-utils-alsaucm, alsa-utils-aplay
+Source: ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.0.25.tar.bz2 file://ncursesfix.patch file://uclibc-exp10-replacement.patch file://0001-alsactl-don-t-let-systemd-unit-restore-the-volume-wh.patch

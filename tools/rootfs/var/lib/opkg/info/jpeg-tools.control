@@ -1,0 +1,18 @@
+Package: jpeg-tools
+Version: 8d+1.2.1-r5
+Description: libjpeg-turbo version 8d+1.2.1-r5
+ The jpeg-tools package includes the client programs for access libjpeg
+ functionality.  These tools allow for the compression, decompression,
+ transformation and display of JPEG files.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD-3-Clause
+Architecture: armv7a-vfp-neon-3.2
+OE: libjpeg-turbo
+Homepage: http://libjpeg-turbo.org/
+Depends: glibc (>= 2.12.2), libjpeg8 (>= 8d+1.2.1)
+Provides: libjpeg-tools
+Replaces: libjpeg-tools
+Conflicts: libjpeg-tools
+Source: svn://libjpeg-turbo.svn.sourceforge.net/svnroot/libjpeg-turbo;protocol=http;module=trunk

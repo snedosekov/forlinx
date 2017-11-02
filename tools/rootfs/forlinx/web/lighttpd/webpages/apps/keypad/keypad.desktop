@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=KeyPad
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/key-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/keypad.sh
+Type=Application
+ProgramType=gui

@@ -1,0 +1,47 @@
+.icons_cell
+{
+	font-size:100%;
+}
+
+#iconlist
+{
+	font-size:13px;
+}
+
+#banner
+{
+	font-size:16px;
+}
+
+#banner img
+{
+	margin-right:10px;
+}
+
+#next_arrow_img, #previous_arrow_img,#run_img,#back_button_img,#exit_button_img,#logo_img
+{
+	width:30px;
+	height:30px;
+}
+
+.icons_cell img
+{
+	width:76px;
+	height:76px;
+}
+
+#descrip_text,#descrip_title
+{
+	font-size:11px;
+}
+
+#descrip_text,#container
+{
+	height:222px; 
+	overflow:auto;
+}
+
+#coming_soon
+{
+	font-size:10px;
+}

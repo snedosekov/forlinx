@@ -1,0 +1,25 @@
+2015-01-20
+1 cpu freq just to 800M  from default 720M ,OK335xD,OK335xS support.
+2 Cancel touch and mouse use at the same time ,because qt app need two times touch. you must use touch2mice  app to switch.  
+3 add link fold in /lib/moduels,becauce driver modules need this fold for modprobe command.
+
+2014-12-22
+add integrate qt test app for lcd4.3 -IntegrateTest43
+2014-11-27 
+1 add integrate qt test app to fs.
+2 support usb mouse and touch use at the same time, do not need switch.
+
+2014-11-13
+lcd4.3 laohua video change to no sound video,xm-4.mp4 is not sound.
+
+2014-09-03
+1 Qt app adjust  GUI for serial lcd(4.3,5,7,8,10); 
+2 Optimization for Seria qt test and Ping qt test ,so manufacture party test easily;
+
+2014-09-11
+1 RS485 Test command line app and Qt app do not set gpio for send and recive on S-II board;
+
+2014-09-23
+1 support 4.3 lcd play video,once and loop;
+2 support ./loop.sh play video on debug serial;
+3 support Qt laohua and  command line laohua;

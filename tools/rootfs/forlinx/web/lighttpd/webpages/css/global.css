@@ -1,0 +1,114 @@
+html
+{
+	background-color:black; 
+	color:white;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+pre
+{
+	font-family: Fixed, monospace;
+}
+
+
+body
+{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+a img
+{
+	border:none; 
+	cursor:default;
+}
+
+a:hover, a:active, a:focus {
+	outline: 0;
+	cursor:default;
+}
+
+input::-moz-focus-inner 
+{ 
+	border: 0; 
+	cursor:default; 
+}
+
+.icons_cell
+{
+	padding:0;
+	margin:0;
+	vertical-align: top;
+}
+
+.icons_cell a
+{
+	padding:0;
+	margin:0;
+}
+
+.icons_cell a img, .icons_cell img
+{
+	padding:0;
+	margin:0;
+}
+
+.icons_cell p
+{
+	padding:0;
+	margin:0;
+}
+
+.hide_link
+{
+	visibility:hidden;
+}
+
+#complete_container
+{
+	height:inherit;
+}
+
+#container
+{
+	font-family: "Courier New", Courier, monospace;
+}
+
+/*To Be overridden*/
+#iconlist
+{
+	width:100%;
+	height:80%;
+}
+
+.icons_cell img
+{
+	width:96px;
+	height:96px;
+}
+
+#logo_img
+{
+	width:50px;
+	height:48px;
+}
+
+#banner
+{
+	font-size:200%;
+	vertical-align: top;
+}
+
+.icons_cell
+{
+	font-size:130%;
+}
+
+#run_img
+{
+	width:50px;
+	height:50px;
+}

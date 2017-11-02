@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=SPI
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/spi-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/spi.sh
+Type=Application
+ProgramType=gui

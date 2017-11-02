@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Eeprom
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/eeprom-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/eeprom.sh
+Type=Application
+ProgramType=gui

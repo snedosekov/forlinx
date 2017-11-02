@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=3D
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/3d-icon.png
+Type=Directory
+X-MATRIX-CategoryTarget=3d
+X-MATRIX-DisplayPriority=2

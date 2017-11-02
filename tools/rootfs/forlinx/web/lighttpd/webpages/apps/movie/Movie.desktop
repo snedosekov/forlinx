@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Movie
+GenericName=Demo App
+Icon=/forlinx/web/lighttpd/webpages/apps/images/movie-icon.png
+Exec=/forlinx/web/lighttpd/webpages/shell/movie.sh
+Type=Application
+ProgramType=gui
+Name[en_US]=Movie

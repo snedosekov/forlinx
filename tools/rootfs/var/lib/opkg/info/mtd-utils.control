@@ -1,0 +1,13 @@
+Package: mtd-utils
+Version: 1.5.0-r1
+Description: mtd-utils version 1.5.0-r1
+ Tools for managing memory technology devices.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: mtd-utils
+Homepage: http://www.linux-mtd.infradead.org/
+Depends: glibc (>= 2.12.2), libz1 (>= 1.2.7), liblzo2-2 (>= 2.06), libuuid1 (>= 2.21.2)
+Source: git://git.infradead.org/mtd-utils.git;protocol=git;tag=ca39eb1d98e736109c64ff9c1aa2a6ecca222d8f file://add-exclusion-to-mkfs-jffs2-git-2.patch

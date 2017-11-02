@@ -1,0 +1,13 @@
+Package: libusb-1.0-0
+Version: 1.0.8-r4
+Description: libusb1 version 1.0.8-r4
+ Userspace library to access USB (version 1.0)
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1+
+Architecture: armv7a-vfp-neon-3.2
+OE: libusb1
+Homepage: http://libusb.sf.net
+Depends: glibc (>= 2.12.2)
+Source: http://downloads.sourceforge.net/libusb/libusb-1.0.8.tar.bz2

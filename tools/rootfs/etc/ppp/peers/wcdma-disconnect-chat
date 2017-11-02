@@ -1,0 +1,6 @@
+ABORT"ERROR"
+ABORT "NODIALTONE"
+SAY"\nSending break to the modem\n"
+'' "\K"
+''"+++ATH"
+SAY"\nGoodbay\n"

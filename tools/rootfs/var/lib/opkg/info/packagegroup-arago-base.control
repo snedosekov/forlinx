@@ -1,0 +1,13 @@
+Package: packagegroup-arago-base
+Version: 1.0-r3
+Description: packagegroup-arago-base version 1.0-r3
+ Basic task to get a device booting
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: all
+OE: packagegroup-arago-base
+Homepage: unknown
+Depends: mtd-utils, ethtool, devmem2, alsa-lib, initscript-telnetd, module-init-tools, curl, tcpdump, alsa-utils-aplay
+Source: None

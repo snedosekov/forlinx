@@ -1,0 +1,2 @@
+./execute_command.sh: line 65: /opt/web/lighttpd/webpages/shell/browser.sh: No such file or directory
+_?!!MATRIX_SCRIPT_COMPLETED!!?_

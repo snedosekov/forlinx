@@ -1,0 +1,12 @@
+Package: alsa-utils-alsaconf
+Version: 1.0.25-r2
+Description: alsa-utils version 1.0.25-r2
+ a bash script that creates ALSA configuration files
+Section: console/utils
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: alsa-utils
+Homepage: http://www.alsa-project.org
+Source: ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.0.25.tar.bz2 file://ncursesfix.patch file://uclibc-exp10-replacement.patch file://0001-alsactl-don-t-let-systemd-unit-restore-the-volume-wh.patch

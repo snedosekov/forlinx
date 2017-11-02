@@ -1,0 +1,2 @@
+Received finished signal while progress is still: 10 Url:  QUrl( "http://www.forlinx.net" )  
+_?!!MATRIX_SCRIPT_COMPLETED!!?_

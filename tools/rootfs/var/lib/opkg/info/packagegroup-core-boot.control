@@ -1,0 +1,16 @@
+Package: packagegroup-core-boot
+Version: 1.0-r10
+Description: Minimal boot requirements
+ The minimal set of packages required to boot the system
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: am335x_evm
+OE: packagegroup-core-boot
+Homepage: unknown
+Depends: tinylogin, busybox, modutils-initscripts, busybox-hwclock, sysvinit, update-alternatives-cworth, udev, initscripts, netbase, base-files, base-passwd
+Provides: task-core-boot
+Replaces: task-core-boot
+Conflicts: task-core-boot
+Source: None

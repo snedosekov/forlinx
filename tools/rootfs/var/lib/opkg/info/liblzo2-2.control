@@ -1,0 +1,13 @@
+Package: liblzo2-2
+Version: 2.06-r1
+Description: lzo version 2.06-r1
+ Lossless data compression library
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: lzo
+Homepage: http://www.oberhumer.com/opensource/lzo/
+Depends: glibc (>= 2.12.2)
+Source: http://www.oberhumer.com/opensource/lzo/download/lzo-2.06.tar.gz file://acinclude.m4

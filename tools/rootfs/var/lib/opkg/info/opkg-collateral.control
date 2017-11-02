@@ -1,0 +1,12 @@
+Package: opkg-collateral
+Version: 1.0-r1
+Description: opkg-collateral version 1.0-r1
+ opkg configuration files
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7a-vfp-neon-3.2
+OE: opkg-collateral
+Homepage: unknown
+Source: file://opkg.conf.comments file://lists file://dest file://src

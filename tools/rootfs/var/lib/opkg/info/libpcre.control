@@ -1,0 +1,18 @@
+Package: libpcre
+Version: 8.31-r0
+Description: libpcre version 8.31-r0
+ Perl-compatible regular expression library. PCRE has its own native API,
+ but a set of 'wrapper' functions that are based on the POSIX API are also
+ supplied in the library libpcreposix. Note that this just provides a
+ POSIX calling interface to PCRE; the regular expressions themselves still
+ follow Perl syntax and semantics. The header file for the POSIX-style
+ functions is called pcreposix.h.
+Section: devel
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: BSD
+Architecture: armv7a-vfp-neon-3.2
+OE: libpcre
+Homepage: unknown
+Depends: glibc (>= 2.12.2), libpcreposix0 (>= 8.31)
+Source: http://downloads.sourceforge.net/project/pcre/pcre/8.31/pcre-8.31.tar.bz2 file://pcre-cross.patch file://fix-pcre-name-collision.patch

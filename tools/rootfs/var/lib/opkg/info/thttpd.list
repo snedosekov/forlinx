@@ -1,0 +1,11 @@
+/usr/sbin/htpasswd
+/srv/www/cgi-bin/ssi
+/usr/sbin/syslogtocern
+/srv/www/
+/usr/sbin/thttpd
+/etc/init.d/thttpd
+/usr/sbin/makeweb
+/srv/www/cgi-bin/phf
+/srv/www/cgi-bin/
+/srv/www/cgi-bin/redirect
+/srv/

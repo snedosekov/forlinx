@@ -1,0 +1,13 @@
+Package: libsndfile1
+Version: 1.0.25-r1
+Description: libsndfile1 version 1.0.25-r1
+ An audio format Conversion library
+Section: libs/multimedia
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1
+Architecture: armv7a-vfp-neon-3.2
+OE: libsndfile1
+Homepage: http://www.mega-nerd.com/libsndfile
+Depends: glibc (>= 2.12.2)
+Source: http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz

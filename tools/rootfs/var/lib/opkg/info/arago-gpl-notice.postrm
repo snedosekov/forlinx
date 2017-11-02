@@ -1,0 +1,2 @@
+#!/bin/sh
+update-rc.d $D gplv3-notice remove

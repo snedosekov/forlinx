@@ -1,0 +1,7 @@
+# Huawei ET8282, Huawei ET127
+DefaultVendor =0x12d1
+DefaultProduct =0x1da1
+TargetVendor=  0x12d1
+TargetProduct= 0x1d09
+
+HuaweiMode=1

@@ -1,0 +1,15 @@
+Package: e2fsprogs-badblocks
+Version: 1.42.1-r4
+Description: Ext2 Filesystem Utilities
+ The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard
+ utilities for creating, fixing, configuring , and debugging ext2
+ filesystems.
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2
+Architecture: armv7a-vfp-neon-3.2
+OE: e2fsprogs
+Homepage: http://e2fsprogs.sourceforge.net/
+Depends: glibc (>= 2.12.2), libext2fs2 (>= 1.42.1), libcom-err2 (>= 1.42.1)
+Source: http://downloads.sourceforge.net/e2fsprogs/e2fsprogs-1.42.1.tar.gz file://mkdir.patch file://fallocate.patch file://acinclude.m4 file://remove.ldconfig.call.patch

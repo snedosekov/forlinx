@@ -1,0 +1,13 @@
+Package: libasound2
+Version: 1.0.25-r2
+Description: alsa-lib version 1.0.25-r2
+ Alsa sound library
+Section: libs/multimedia
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: LGPLv2.1 & GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: alsa-lib
+Homepage: http://www.alsa-project.org
+Depends: glibc (>= 2.12.2), alsa-conf-base
+Source: ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.0.25.tar.bz2 file://fix-tstamp-declaration.patch

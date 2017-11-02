@@ -1,0 +1,22 @@
+#! /bin/sh
+
+inetd=/usr/sbin/inetd
+
+test -x "$inetd" || exit 0
+
+case "$1" in
+  start)
+    echo -n "Starting inetd daemon"
+    start-stop-daemon --start --quiet --exec $inetd
+    echo "."
+    ;;
+  stop)
+    echo -n "Stopping inetd daemon"
+    start-stop-daemon --stop --quiet --pidfile /var/run/inetd.pid
+    echo "."
+    ;;
+  *)
+    exit 1
+esac
+
+exit 0

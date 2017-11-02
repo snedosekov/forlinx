@@ -1,0 +1,14 @@
+Package: nfs-utils-client
+Version: 1.2.3-r5
+Description: userspace utilities for kernel nfs
+ The nfs-utils package provides a daemon for the kernel NFS server and
+ related tools.
+Section: console/network
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: GPLv2+
+Architecture: armv7a-vfp-neon-3.2
+OE: nfs-utils
+Homepage: http://nfs.sourceforge.net/
+Depends: glibc (>= 2.12.2)
+Source: http://downloads.sourceforge.net/nfs/nfs-utils-1.2.3.tar.bz2 file://nfs-utils-1.0.6-uclibc.patch file://nfs-utils-1.2.3-uclibc-libio.h.patch file://nfs-utils-nfsctl-x32-fix.patch file://nfsserver

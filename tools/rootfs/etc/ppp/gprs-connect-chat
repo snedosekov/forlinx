@@ -1,0 +1,16 @@
+TIMEOUT         15
+ABORT '\nBUSY\r'
+ABORT '\nNO ANSWER\r'
+ABORT '\nRINGING\r\n\r\nRINGING\r'
+#'' AT
+#'OK-+++\c-OK' ATH0
+TIMEOUT         40
+''              'AT'
+OK              ATS0=0
+OK              ATE0V1
+OK              AT+CGDCONT=1,"IP","UNINET" 
+OK              'ATDT*99***1#'
+CONNECT         
+#OK              AT+CFUN=1 #.....AT........3G..................
+#OK              AT+CGDCONT=1,"IP","CMNET" 
+#OK              'ATDT*99***1#'

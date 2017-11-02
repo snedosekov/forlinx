@@ -1,0 +1,15 @@
+debug
+nodetach
+/dev/ttyUSB0
+115200
+usepeerdns
+noauth
+noipdefault
+novj
+novjccomp
+noccp
+defaultroute
+ipcp-accept-local
+ipcp-accept-remote
+connect '/usr/sbin/chat -s -v -f /etc/ppp/peers/wcdma-connect-chat'
+disconnect '/usr/sbin/chat -s -v -f /etc/ppp/peers/wcdma-disconnect-chat'

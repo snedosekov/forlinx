@@ -1,0 +1,13 @@
+Package: libncursesw5
+Version: 5.9-r11.1
+Description: The New Curses library
+ ncurses ncursesw library
+Section: libs
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: armv7a-vfp-neon-3.2
+OE: ncurses
+Homepage: http://www.gnu.org/software/ncurses/ncurses.html
+Depends: glibc (>= 2.12.2), libtinfo5 (>= 5.9)
+Source: ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz file://tic-hang.patch file://config.cache

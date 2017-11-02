@@ -1,0 +1,12 @@
+Package: fbset-modes
+Version: 0.1.0-r6
+Description: fbset-modes version 0.1.0-r6
+ Default display timings and resolutions for fbset
+Section: base
+Priority: optional
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+License: MIT
+Architecture: all
+OE: fbset-modes
+Homepage: unknown
+Source: file://fb.modes
