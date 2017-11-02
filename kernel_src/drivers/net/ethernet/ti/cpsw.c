@@ -828,6 +828,8 @@ void cpsw_rx_handler(void *token, int len, int status)
 	struct cpsw_priv	*priv = netdev_priv(ndev);
 	int			ret = 0;
 
+	printk("r\n");
+
 	cpsw_dual_emac_source_port_detect(status, priv, ndev, skb);
 
 	if (unlikely(!netif_running(ndev)) ||
@@ -878,6 +880,8 @@ static irqreturn_t cpsw_interrupt(int irq, void *dev_id)
 {
 	struct cpsw_priv *priv = dev_id;
 
+	printk("i\n");
+
 	if (likely(netif_running(priv->ndev))) {
 		cpsw_intr_disable(priv);
 		cpsw_disable_irq(priv);
@@ -898,6 +902,8 @@ static int cpsw_poll(struct napi_struct *napi, int budget)
 {
 	struct cpsw_priv	*priv = napi_to_priv(napi);
 	int			num_tx, num_rx;
+
+	printk("cpsw_poll\n");
 
 	num_tx = cpdma_chan_process(priv->txch, 128);
 	num_rx = cpdma_chan_process(priv->rxch, budget);
@@ -958,12 +964,15 @@ static void _cpsw_adjust_link(struct cpsw_slave *slave,
 	u32			mac_control = 0;
 	u32			slave_port;
 
+	printk("_cpsw_adjust_link\n");
+
 	if (!phy)
 		return;
 
 	slave_port = cpsw_get_slave_port(priv, slave->slave_num);
 	
 	if (phy->link) {
+		printk("phy link enable\n");
 		/* enable forwarding */
 		cpsw_ale_control_set(priv->ale, slave_port,
 			ALE_PORT_STATE, priv->port_state[slave_port]);
@@ -1097,8 +1106,10 @@ static void cpsw_set_phy_config(struct cpsw_priv *priv, struct phy_device *phy)
 
 	miibus = phy->bus;
 
-	if (!miibus)
+	if (!miibus){
+		printk("no miibus\n");
 		return;
+	}
 
 	phy_addr = phy->addr;
 
@@ -1133,6 +1144,7 @@ static void cpsw_set_phy_config(struct cpsw_priv *priv, struct phy_device *phy)
 	tmp = miibus->read(miibus, phy_addr, MII_ADVERTISE);
 
 #if defined(CONFIG_OK335XS2)
+	printk("CONFIG_OK335XS2\n");
 	val = miibus->read(miibus, phy_addr, DP83848_PHYCR);
 	val &= (~DP83848_LED_MOD);
 	miibus->write(miibus, phy_addr, DP83848_PHYCR, val);
@@ -2791,6 +2803,7 @@ static int __devinit cpsw_probe(struct platform_device *pdev)
 	}
 
 	while ((i = platform_get_irq(pdev, k)) >= 0) {
+		printk("attach irq %u\n", i);
 		if (request_irq(i, cpsw_interrupt, IRQF_DISABLED,
 				dev_name(&pdev->dev), priv)) {
 			dev_err(priv->dev, "error attaching irq\n");
